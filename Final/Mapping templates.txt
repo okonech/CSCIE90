@@ -1,0 +1,28 @@
+Get patient:
+
+{
+  "TableName": "FhirPatient",
+  "Key": {
+    "id": {
+      "S": "$input.params('id')"
+    }
+  }
+}
+
+
+Gender index lookup:
+
+{
+    "TableName": "FhirPatient",
+    "IndexName": "gender-index",
+    "KeyConditionExpression": "gender = $input.params('genderlookup')"
+}
+
+
+Active index lookup:
+
+{
+    "TableName": "FhirPatient",
+    "IndexName": "active-index",
+    "KeyConditionExpression": "active = $input.params('activelookup')",
+}

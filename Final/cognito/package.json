@@ -1,0 +1,15 @@
+{
+  "name": "cognito",
+  "version": "1.0.0",
+  "description": "sign in as user and get token using amplify sdk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Okonechnikov",
+  "license": "ISC",
+  "dependencies": {
+    "amazon-cognito-identity-js": "^3.0.6",
+    "aws-amplify": "^1.1.17"
+  }
+}

@@ -1,0 +1,9 @@
+#!/bin/bash
+yum update -y
+yum install -y httpd
+cd /var/www/html
+chmod -R o+r /var/www/html
+echo "Instance 1 - Alex" > index.html
+echo "Still alive" > healthcheck.html
+service httpd start
+chkconfig httpd start
